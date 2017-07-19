@@ -59,17 +59,14 @@
     field.addEventListener('keyup', (e) => {
         if (e.keyCode === 13)  {
             let text = field.value;
-            console.log("111");
             socket.emit('send', {message: text, sender:user});
-            field.value =''
+            field.value ='';
         }
         else {
-            if (e.keyCode === 111) {
-                let text = field.value;
-                console.log("+++");
-            } else {
-                socket.emit('is typing', user);
-            }
+            if (field.value.substring(0,1) == "@") {
+                console.log("hello, niggas");
+            }  
+            socket.emit('is typing', user);
         }
     });
     socket.on('typing', (data) => {
