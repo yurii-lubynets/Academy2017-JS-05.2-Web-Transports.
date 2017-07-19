@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Test Case 5</title>
+    </head>
+    <body>
+        <div id="modal_login-window" class="login-window">
+            <div class="modal-content">
+                <h3>Login</h3>
+                <p>please, provide your name and nickname for chatting</p>
+                <div class="row">
+                    <input type="text" id="nameInput" placeholder="Name...">
+                </div>
+                <div class="row">
+                    <input type="text" id="nickNameInput" placeholder="Nickname...">
+                </div>
+                <div class="row">
+                    <button class="userBtn">LogIn</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-4 col-sm-4">
+                <div class="well">
+                    <h3>Online</h3>
+                    <ul class="list-group" id="users"></ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <div class="chat">
+                    <h3>Chat</h3>
+                    <div class="nameFiled"></div>
+                    <ul class="messageHistory"></ul>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                    <p class="userIsTyping"></p>
+                    <textarea class="form-control" id="field" placeholder="just chatting..."></textarea>
+                    <input type="submit" id ="sendButton" class="btn btn-primary" value="Send"/>
+                </div>
+            </div>
+        <script src="../socket.io/socket.io.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

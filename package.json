@@ -1,0 +1,16 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yurii Lubynets",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.3"
+  }
+}
